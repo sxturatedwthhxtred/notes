@@ -8,7 +8,11 @@ in project directory:
 5. git push -u origin main id5
 
 * Authentication error 
-		GitHub doesn't provide passwords in step 5, need <b>Token</b>
+		GitHub doesn't provide passwords in step 4, instead use <b>Token</b>
+		_Generate a PAT on GitHub:_
+			1. Go to your GitHub account settings.
+			2. Navigate to "Developer settings" > "Personal access tokens."
+			3. Generate a new token with the required scopes (e.g., repo for repository access).
 * Access to private repo
 		add user to <b>Collaborators</b>
 
