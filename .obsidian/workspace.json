@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "a230fbb4bc74ca6b",
+    "type": "split",
+    "children": [
+      {
+        "id": "868bd9efb4e11c6d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "df65e5c38770f704",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stuff/styling memes/Forms.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Forms"
+            }
+          },
+          {
+            "id": "56e98b1b8cf71839",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stuff/styling memes/AdminPanel-button.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AdminPanel-button"
+            }
+          },
+          {
+            "id": "7e78c5c7e4196d70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "stuff/WhatsGithub?.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WhatsGithub?"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5fa5a6ebd27a4a4c",
+    "type": "split",
+    "children": [
+      {
+        "id": "c1bd8032e458eaac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "697e9ae345738a99",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "055ea4f0a9312d8b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "49cef35a6ef402e4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0b23a4d69d10d115",
+    "type": "split",
+    "children": [
+      {
+        "id": "6e74ea1fa0aa5a1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8afba8050f1ba2f6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "First landing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for First landing"
+            }
+          },
+          {
+            "id": "e22a7eaf014b7110",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "f3f739c334a3a0eb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "869a56a3fc92af5c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7e78c5c7e4196d70",
+  "lastOpenFiles": [
+    "stuff/JSMegaBase.md",
+    "Untitled.canvas",
+    "Untitled",
+    "stuff/styling memes/Forms.md",
+    "stuff/styling memes/css/Coordinates in css.md",
+    "stuff/styling memes/AdminPanel-button.md",
+    "stuff/styling memes/css",
+    "projects/First landing.md",
+    "stuff/WhatsGithub?.md",
+    "projects",
+    "stuff/styling memes/InputsHTML.md",
+    "stuff/styling memes/css/SomeUsefulCSSConcepts.md",
+    "stuff/styling memes/DarkTheme.md",
+    "stuff/styling memes/css/Flexbox.md",
+    "stuff/styling memes/Pop-ups.md",
+    "stuff/styling memes/css/Bootstrap.md",
+    "stuff/styling memes/css/PseudoClasses.md",
+    "stuff/semantics/Footer.md",
+    "stuff/styling memes",
+    "stuff/semantics",
+    "stuff",
+    "What's GitHub?.md alias",
+    "Users/sxnsxlxss/Documents/coding.md",
+    "JS mega base.md",
+    "Users/sxnsxlxss/Documents",
+    "Users/sxnsxlxss",
+    "Users",
+    "Ученикам_Bootstrap.md",
+    "Ученикам_Bootstrap copy.md",
+    "firstLandingAssets/AdminPanel-button.md",
+    "firstLandingAssets/SomeUsefulCSSConcepts.md",
+    "firstLandingAssets/PseudoClasses.md",
+    "firstLandingAssets/Pop-ups.md",
+    "firstLandingAssets/DarkTheme.md",
+    "firstLandingAssets/Footer.md",
+    "notes.md",
+    "fbscreens/Screenshot 2025-01-03 at 1.08.15 AM.png",
+    "fbscreens/Screenshot 2025-01-03 at 1.12.41 AM.png",
+    "fbscreens/Screenshot 2025-01-04 at 01.58.58.png",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Untitled 3.canvas"
+  ]
+}

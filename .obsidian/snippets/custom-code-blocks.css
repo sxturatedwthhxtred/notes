@@ -1,0 +1,14 @@
+/* Общий стиль для блоков кода */
+.markdown-preview-view pre {
+    border: 2px solid #4a90e2; /* Цвет рамки */
+    border-radius: 10px; /* Скругленные углы */
+    padding: 10px; /* Отступы внутри */
+    background-color: #f5f5f5; /* Фон */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Для темного режима */
+.theme-dark .markdown-preview-view pre {
+    background-color: #2a2a2a;
+    border-color: #6b8fff;
+}

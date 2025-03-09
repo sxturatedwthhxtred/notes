@@ -1,0 +1,8 @@
+{
+  "enabledCssSnippets": [
+    "transparent-sidebar",
+    "custom-code-blocks"
+  ],
+  "theme": "obsidian",
+  "cssTheme": "Things"
+}
