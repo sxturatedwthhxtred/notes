@@ -50,4 +50,3 @@ Usually `landing` is structured like that:
 
 - Optimize animations (rewrite to *`GSAP`*)
 - Improve adaptivity (*test on mobile*) 
-- Add *`meta-tags`* (for SEO)

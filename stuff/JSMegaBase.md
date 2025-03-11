@@ -1,15 +1,22 @@
 ****
+## Content:
+1. [[JSMegaBase#what JS can do?|intro]]
+2. [[JSMegaBase#Output on page|outputs]]
+3. [[JSMegaBase#Find element in document|finding elements]]
+4. [[JSMegaBase#Classlist|classlist]]
+5. [[JSMegaBase#Buttons|buttons]]
+6. [[JSMegaBase#Events|events]]
+
+
+****
 ### what JS can do?
 
 1. Works with DOM(Document Object Model)
-
 > for example: document.querrySelector(...)
-
 2. Contact with server
-
 3. Responds to users actions
+> `onclick` option, event listeners, etc.
 
-> onclick option, event listeners, etc.
 
 ```JS
 const headers = document.querySelectorAll("h1");
@@ -23,6 +30,7 @@ alert(headers[0].nodeName);
 
 ****
 ### Output on page
+
 1. Create HTML file (4 now test-output.html)
 
 2. Find it using JS (or write JS code in the script tag)
@@ -41,14 +49,15 @@ object.nodeName;
 
 ****
 ### Find element in document
+
 > note: use `.classname`, `#id`, `tagname`, `div.card.a` (idk whats this)
 
-`querySelector(selector)` -- find DOM element that matches selector
-`querySelectorAll(selector)` -- returns all elements
-> note: use just `classname/id`
+`node.querySelector(selector)` -- find DOM element that matches selector
+`node.querySelectorAll(selector)` -- returns all elements
+> note: use just `classname`
 
-`getElementById(id)` -- find element by its id (works faster if searchin' in full document)
-`getElementsByClassName(classname)` -- by class name
+`node.getElementById(id)` -- find element by its id (works faster if searchin' in full document)
+`node.getElementsByClassName(classname)` -- by class name
 etc.
 
 ```JS
@@ -66,6 +75,43 @@ let someNode = document.querySelector(".customClassName");
 
 // etc.
 ```
+
+
+`node.closest()` -- finds container where the node is located (also it can be not found)
+```js
+function onClick(evt) {
+	let node = evt.target;
+	let item = node.closest(`.item`);
+	if (black) {
+		black.classList.toggle(`item-active`);
+	}
+}
+```
+****
+### Classlist
+
+#### classList changes
+we can _add/remove/toggle_ class in element's class list using JS like this:
+```js
+textNode.classList.add(`class-1`);
+textNode.classList.remove(`class-1`);
+textNode.classList.toggle(`class-2`);
+```
+
+#### classList.contains()
+using `classList.contains()` we can check what element do we have
+```js
+function onClick(evt) {
+	let item = evt.target;
+	if (item.classList.contains(`item-clickable`)) {
+		item.classList.remove(`item-clickable`);
+	}
+	else {
+		item.classList.add(`item-clickable`);
+	}
+};
+```
+
 
 ****
 ### Buttons 
@@ -114,3 +160,21 @@ document.addEventListener(`keydown`, (evt) => {
 	console.log(evt.key);
 });
 ```
+
+> `input` Triggers when user types new symbol in text input area
+```js
+textNode.addEventListener(`input`, () => {
+	console.log(textNode.value); // value contains information from input area
+});
+```
+
+#### input+select
+_input_ for _select_ tag triggers when any option was selected
+
+value of this option can be viewed when calling select (like for text nodes)
+```js
+selectNode.addEventLister(`input`, () => {
+	console.log(selectNode.value);
+});
+```
+

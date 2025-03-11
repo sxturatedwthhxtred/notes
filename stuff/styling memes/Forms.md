@@ -2,7 +2,8 @@
 ## Theory
 
 ### bethink
-[buttons 'n events](JSMegaBase)
+[events](JSMegaBase#Events)
+[buttons](JSMegaBase#Buttons)
 - - -
 
 ### Event object
@@ -79,6 +80,7 @@ button {
 
 ****
 ### node.style
+
 Styles of element
 
 if we gotta change *coord* of an element then we can do it via *JS property* `style`
@@ -103,3 +105,67 @@ node.style.backgroundColor;
 // margin-bottom 
 node.style.marginBottom;
 ```
+
+
+****
+### drop-down list
+
+> realization via `Bootstrap`
+```html
+<select class="form-select">
+	<option value="1">One</option>
+	<option value="2">Two</option>
+	<option value="3">Three</option>
+</select>
+```
+<select class="form-select">
+	<option value="1">One</option>
+	<option value="2">Two</option>
+	<option value="3">Three</option>
+</select>
+
+[input event for select tag](JSMegaBase#input+select)
+
+
+****
+### Event target
+
+`evt.target` -- Property of an _event object_ contains element where event was triggered
+```js
+function clickEvent(evt) {
+	console.log(evt.target);
+};
+```
+
+U can use `evt.target` when we gotta _change element_ where event was triggered
+```js
+function clickEvent(evt) {
+	let item = evt.target;
+	item.classList.add(`active`);
+};
+```
+
+#### Checking event target
+
+`example:` what if we don't have elements on a page when we are adding event handlers? 
+We can add event handler 2 ways:
+1. on element
+2. on element's container -- _delegation_
+
+Event target can be any element in the container when used delegation
+
+
+****
+### Finding container
+
+> Finding methods
+```js
+// finding by class in item
+item.querySelector(`.exampleClass`);
+
+// finding by class between item's containers 
+item.closest(`.exampleClass`);
+```
+
+[[JSMegaBase#Find element in document|more info]]
+
