@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "stuff/JSMegaBase.md",
+                "file": "stuff/styling memes/Forms.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JSMegaBase"
+              "title": "Forms"
             }
           }
         ]
@@ -161,10 +161,11 @@
   },
   "active": "df65e5c38770f704",
   "lastOpenFiles": [
+    "stuff/styling memes/css/Bootstrap.md",
     "stuff/styling memes/Forms.md",
+    "stuff/JSMegaBase.md",
     "stuff/styling memes/css/Flexbox.md",
     "projects/First landing.md",
-    "stuff/JSMegaBase.md",
     "stuff/semantics/Footer.md",
     "stuff/styling memes/Pop-ups.md",
     "stuff/styling memes/InputsHTML.md",
@@ -179,7 +180,6 @@
     "stuff/styling memes/css",
     "projects",
     "stuff/styling memes/css/SomeUsefulCSSConcepts.md",
-    "stuff/styling memes/css/Bootstrap.md",
     "stuff/styling memes/css/PseudoClasses.md",
     "stuff/styling memes",
     "stuff/semantics",

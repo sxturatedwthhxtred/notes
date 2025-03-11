@@ -1,10 +1,19 @@
 ****
-## Theory
-
-### bethink
+## bethink
 [events](JSMegaBase#Events)
 [buttons](JSMegaBase#Buttons)
-- - -
+
+## Content
+1. [[Forms#Event object|event object]]
+2. [[Forms#Event listener|event listener]] (more in [[JSMegaBase#Events]])
+3. [[Forms#Event objects properties|event props]]
+4. [[Forms#Document|document]]
+5. [[Forms#Position|position]]
+6. [[Forms#node.style|node style]]
+7. [[Forms#drop-down list|drop-down list]]
+8. [[Forms#Event target|event target]]
+9. [[Forms#Finding container|finding container]]
+## Theory
 
 ### Event object
 

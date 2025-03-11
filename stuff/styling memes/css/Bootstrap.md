@@ -54,6 +54,19 @@
 - **Navs** — basic site navigation component 
 - Large code blocks can be simple copied and used
 
+> realization via `Bootstrap`
+```html
+<select class="form-select">
+	<option value="1">One</option>
+	<option value="2">Two</option>
+	<option value="3">Three</option>
+</select>
+```
+<select class="form-select">
+	<option value="1">One</option>
+	<option value="2">Two</option>
+	<option value="3">Three</option>
+</select>
 ## Cards
 
 - **Card** — dynamic card for content
