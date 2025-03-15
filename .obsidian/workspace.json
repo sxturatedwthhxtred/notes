@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Vue.js.md",
+                "file": "stuff/Vue.js.md",
                 "mode": "source",
                 "source": false
               },
@@ -174,10 +174,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df65e5c38770f704",
+  "active": "697e9ae345738a99",
   "lastOpenFiles": [
     "stuff/styling memes/css/Bootstrap.md",
-    "Vue.js.md",
+    "stuff/Vue.js.md",
     "stuff/styling memes/Forms.md",
     "stuff/styling memes/css/Flexbox.md",
     "stuff/JSMegaBase.md",
