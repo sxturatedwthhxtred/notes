@@ -4,8 +4,9 @@
 2. [[JSMegaBase#Output on page|outputs]]
 3. [[JSMegaBase#Find element in document|finding elements]]
 4. [[JSMegaBase#Classlist|classlist]]
-5. [[JSMegaBase#Buttons|buttons]]
-6. [[JSMegaBase#Events|events]]
+5. [[JSMegaBase#node.style|change styles]]
+6. [[JSMegaBase#Buttons|buttons]]
+7. [[JSMegaBase#Events|events]]
 
 
 ****
@@ -110,6 +111,35 @@ function onClick(evt) {
 		item.classList.add(`item-clickable`);
 	}
 };
+```
+
+
+****
+### node.style
+
+Styles of element
+
+if we gotta change *coord* of an element then we can do it via *JS property* `style`
+```js
+node.style.top = `100px`;
+node.style.left = `200px`;
+```
+
+after changing `node.style`, the element will have inline-styles
+
+Using this property we can change any CSS property
+```js
+node.style.color = `red`;
+node.style.border = `1px solid black`;
+```
+
+if CSS property is written using `-` (hyphen) then in it's capitalized in JS code
+```js
+// background-color
+node.style.backgroundColor;
+
+// margin-bottom 
+node.style.marginBottom;
 ```
 
 

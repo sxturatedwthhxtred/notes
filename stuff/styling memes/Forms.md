@@ -9,7 +9,6 @@
 3. [[Forms#Event objects properties|event props]]
 4. [[Forms#Document|document]]
 5. [[Forms#Position|position]]
-6. [[Forms#node.style|node style]]
 7. [[Forms#drop-down list|drop-down list]]
 8. [[Forms#Event target|event target]]
 9. [[Forms#Finding container|finding container]]
@@ -17,7 +16,7 @@
 
 ### Event object
 
-Event -- information about user or browser action:
+_Event_ -- information about user or browser action:
 1. Mouse click
 2. Mouse move
 3. Keyboard input
@@ -85,35 +84,6 @@ button {
 }
 ```
 `left` and `top` properties shows what idents must be with element and page's side
-
-
-****
-### node.style
-
-Styles of element
-
-if we gotta change *coord* of an element then we can do it via *JS property* `style`
-```js
-node.style.top = `100px`;
-node.style.left = `200px`;
-```
-
-after changing `node.style`, the element will have inline-styles
-
-Using this property we can change any CSS property
-```js
-node.style.color = `red`;
-node.style.border = `1px solid black`;
-```
-
-if CSS property is written using `-` (hyphen) then in it's capitalized in JS code
-```js
-// background-color
-node.style.backgroundColor;
-
-// margin-bottom 
-node.style.marginBottom;
-```
 
 
 ****
