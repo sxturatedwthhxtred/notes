@@ -1,4 +1,5 @@
 ## Content
+## Part 1
 1. [[Vue.js#Defenitions|definitions]]
 2. [[Vue.js#Connecting via CDN|connection]]
 3. [[Vue.js#Data|data]]
@@ -7,6 +8,11 @@
 	2. [[Vue.js#Methods|methods]]
 5. [[Vue.js#Buttons|buttons]]
 6. [[Vue.js#4 mastodons of Vue|Vue basis]]
+
+## Part 2
+1. [[Vue.js#Creating a project|creating a project]]
+	1. [[Vue.js#App mount|app mount]]
+	2. 
 ****
 ## Vue.JS. basics
 ### Definitions
@@ -189,3 +195,91 @@ This is called _responsiveness_
 
 
 ****
+### Creating a project
+
+run command:
+
+```bash
+npm create vue@3 project_name
+```
+> replace project_name with ur own
+
+open project directory and install packages:
+```shell
+npm install
+```
+
+
+#### App mount
+
+`main.js`
+```js
+import { createApp } from "vue";
+import App from "./App.vue"
+
+createApp(App).mount("#app");
+```
+
+`index.html`
+```html
+<body>
+	<div id="#app">
+		<!--- here'll be our app --->
+	</div>
+	<script type="module" src="/src/main.js"></script>
+</body>	
+```
+
+
+#### Running project
+
+We can use this command after installing packages:
+```shell
+npm run dev
+```
+
+In general we can see the sequence of commands in terminal. It'll be like this:
+```shell
+Done. Now run:
+
+	cd components-app
+	npm install 
+	npm run dev
+```
+
+
+****
+### Another approach
+
+At the core of Vue there are _components_ -- special interface elements that can be reused
+Every component is saved in the individual `file.vue`
+
+Every component contains 3 tag sections:
+```vue
+<script>
+...
+</script>
+
+<template>
+...
+</template>
+
+<style>
+h1 { font-size: 40px }
+</style>
+```
+
+_Components_ are like constructor, using them we can build an app
+
+Component _`App.vue`_ -- is like platform for other component constructor
+Here we can connect another components and call them like tags
+```vue
+<template>
+	<h1>This is HTML tag btw</h1>
+	<hello-world></hello-world>
+	<hello-world />
+</template>
+```
+
+When user will open our site _`App.vue`_ -- is the first thing he'll see
+Vue has uniq browser-unfriendly syntax, so then we need `Vite assembler`
