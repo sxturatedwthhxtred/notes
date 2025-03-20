@@ -1,4 +1,5 @@
 ## Content
+## Part 1
 1. [[Vue.js#Defenitions|definitions]]
 2. [[Vue.js#Connecting via CDN|connection]]
 3. [[Vue.js#Data|data]]
@@ -6,7 +7,14 @@
 	1. [[Vue.js#Events|events in vue]]
 	2. [[Vue.js#Methods|methods]]
 5. [[Vue.js#Buttons|buttons]]
-6. [[Vue.js#4 mastodons of Vue|Vue basis]]
+6. [[Vue.js#4 whales of Vue|Vue basis]]
+
+## Part 2
+1. [[Vue.js#Creating a project|creating a project]]
+	1. [[Vue.js#App mount|app mount]]
+2. [[Vue.js#Another approach|another approach]]
+	1.  [[Vue.js#Component connection|component connection]]
+	2.  [[Vue.js#Component naming|how to name components]]
 ****
 ## Vue.JS. basics
 ### Definitions
@@ -78,7 +86,7 @@ We can _print_ data into template via `{}`
 ****
 ### Event handler
 
-We won't see anymore these 3 mastodons of JS:
+We won't see anymore these 3 whalex of JS:
 1. `document.querySelector()`
 2. `node.innerHTML`
 3. `button.addEventListener()`
@@ -180,7 +188,7 @@ This is called _responsiveness_
 
 
 ****
-### 4 mastodons of Vue
+### 4 whales of Vue
 
 1. declare `data`
 2. print `data` into template: _{{ text }}_
@@ -189,3 +197,139 @@ This is called _responsiveness_
 
 
 ****
+### Creating a project
+
+run command:
+
+```bash
+npm create vue@3 project_name
+```
+> replace project_name with ur own
+
+open project directory and install packages:
+```shell
+npm install
+```
+
+
+#### App mount
+
+`main.js`
+```js
+import { createApp } from "vue";
+import App from "./App.vue"
+
+createApp(App).mount("#app");
+```
+
+`index.html`
+```html
+<body>
+	<div id="#app">
+		<!--- here'll be our app --->
+	</div>
+	<script type="module" src="/src/main.js"></script>
+</body>	
+```
+
+
+#### Running project
+
+We can use this command after installing packages:
+```shell
+npm run dev
+```
+
+In general we can see the sequence of commands in terminal. It'll be like this:
+```shell
+Done. Now run:
+
+	cd components-app
+	npm install 
+	npm run dev
+```
+
+
+****
+### Another approach
+
+At the core of Vue there are _components_ -- special interface elements that can be reused
+Every component is saved in the individual `file.vue`
+
+Every component contains 3 tag sections:
+```vue
+<script>
+...
+</script>
+
+<template>
+...
+</template>
+
+<style>
+h1 { font-size: 40px }
+</style>
+```
+
+_Components_ are like constructor, using them we can build an app
+
+Component _`App.vue`_ -- is like platform for other component constructor
+Here we can connect another components and call them like tags
+```vue
+<template>
+	<h1>This is HTML tag btw</h1>
+	<hello-world></hello-world>
+	<hello-world />
+</template>
+```
+
+When user will open our site _`App.vue`_ -- is the first thing he'll see
+Vue has uniq browser-unfriendly syntax, so then we need `Vite assembler`
+
+Assembler is used to translate Vue components to HTML, CSS and JS
+It also runs local server that makes available files on `localhost`
+
+
+#### Component connection
+
+> import
+```html
+<script>
+	import ComponentOne from './components/ComponentOne.vue'
+	import ComponentTwo from './components/ComponentTwo.vue'
+
+	export default {
+		components: {
+			ComponentOne,
+			ComponentTwo
+		}
+	}
+</script>
+```
+
+> usage
+```html
+<template>
+	<component-one> </component-one>
+</template>
+```
+or
+```html
+<template>
+	<component-two /> 
+</template>
+```
+
+#### Component naming
+1. two-word phrase
+2. CamelCase
+3. doesn't repeat HTML-tags
+
+
+#### Component creation
+1. create a component file.vue in `components` folder
+2. connect component into App
+
+> Q: where to code styles?
+> A: in components' file
+

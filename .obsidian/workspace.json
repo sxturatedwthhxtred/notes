@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "df65e5c38770f704",
+            "id": "26eeecf086596746",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -174,15 +174,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "697e9ae345738a99",
+  "active": "26eeecf086596746",
   "lastOpenFiles": [
-    "stuff/styling memes/css/Bootstrap.md",
+    "stuff/semantics/Footer.md",
     "stuff/Vue.js.md",
     "stuff/styling memes/Forms.md",
     "stuff/styling memes/css/Flexbox.md",
+    "stuff/styling memes/css/Bootstrap.md",
     "stuff/JSMegaBase.md",
     "projects/First landing.md",
-    "stuff/semantics/Footer.md",
     "stuff/styling memes/Pop-ups.md",
     "stuff/styling memes/InputsHTML.md",
     "stuff/styling memes/AdminPanel-button.md",
@@ -212,7 +212,6 @@
     "firstLandingAssets/SomeUsefulCSSConcepts.md",
     "firstLandingAssets/PseudoClasses.md",
     "firstLandingAssets/Pop-ups.md",
-    "firstLandingAssets/DarkTheme.md",
     "fbscreens/Screenshot 2025-01-03 at 1.08.15 AM.png",
     "fbscreens/Screenshot 2025-01-03 at 1.12.41 AM.png",
     "fbscreens/Screenshot 2025-01-04 at 01.58.58.png",
