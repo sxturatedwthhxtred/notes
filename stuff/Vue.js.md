@@ -15,6 +15,10 @@
 2. [[Vue.js#Another approach|another approach]]
 	1.  [[Vue.js#Component connection|component connection]]
 	2.  [[Vue.js#Component naming|how to name components]]
+
+## Part 3
+1. [[Vue.js#Attributes|attributes]]
+2. [[Vue.js#Classes|classes]]
 ****
 ## Vue.JS. basics
 ### Definitions
@@ -332,4 +336,104 @@ or
 
 > Q: where to code styles?
 > A: in components' file
+
+****
+### Attributes
+
+We can change attributes (ex. to change image)
+```vue
+<script>
+export default {
+	data() {
+		return {
+			image: "src/assets/img.png"
+		}
+	}
+}
+</script>
+```
+
+
+> incorrect
+```vue
+<template>
+	<img src="{{ image }}">
+</template>
+```
+
+To substitute attribute into template we're using `v-bind` directive
+```vue
+<template>
+	<img v-bind:src="image">
+</template>
+```
+
+> shorter ver
+```vue
+<template>
+	<img :src="image">
+</template>
+```
+
+So, using `v-bind` we can paste any data-property into any attribute
+
+```vue
+<script>
+export default {
+	data() {
+		return {
+			image: "src/assets/img.png",
+			imageWidth: 500,
+			imageClass: "img img-fluid"
+		}
+	}
+}
+</script>
+
+
+
+<template>
+	<img :src="image"
+		 :width="imageWidth"
+		 :class="imageClass"
+	>
+</template>
+```
+
+
+****
+### Classes
+
+DOM example
+```js
+let button = document.querySelector(`.btn`);
+let node = document.querySelector(`.node`);
+
+button.addEventListener(`click`, () => {
+	node.classList.toggle(`hidden`);
+});
+```
+
+Instead of working w/ DOM, Vue works on principle of _reactivity_
+Changing _data_ will cause _components_' redraw 
+
+Same ex. but using `data`, `v-bind`, `@click`
+
+> :class attribute can be set as an object w/ values _true_/_false_
+```vue
+<div :class="{
+		'table': true,
+		'red': false,
+		'white': true
+}">
+...
+</div>
+
+
+<!--- same to the following v--->
+```
+```html
+<div class="table white">
+</div>
+```
 
