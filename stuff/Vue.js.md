@@ -18,7 +18,10 @@
 
 ## Part 3
 1. [[Vue.js#Attributes|attributes]]
+	1. [[Vue.js#v-bind|v-bind directive]]
 2. [[Vue.js#Classes|classes]]
+3. [[Vue.js#Styles|styles]]
+4. [[]]
 ****
 ## Vue.JS. basics
 ### Definitions
@@ -368,6 +371,15 @@ To substitute attribute into template we're using `v-bind` directive
 </template>
 ```
 
+#### v-bind
+1. spelt w/ `:`
+	 `:src="imageSrc"`
+2. classes via objects
+	 `:class="{'isDark': true}"`
+3. styles via objects
+	 `:style="{'color': 'black'}"`
+
+
 > shorter ver
 ```vue
 <template>
@@ -437,3 +449,73 @@ Same ex. but using `data`, `v-bind`, `@click`
 </div>
 ```
 
+
+By principle of _reactivity_ we can bind a _data-property_ dependence for adding class:
+
+> property
+```vue
+<script>
+	data() {
+		return {
+		isHidden: true
+		}
+	}
+</script>
+```
+
+> class
+```vue
+<template>
+	<div :class="{
+		'hidden': isHidden
+	}">
+		...
+	</div>
+</template>
+```
+
+
+Or add a _method_ that toggles class after _click-event_
+```vue
+<script>
+	methods: {
+		toggle() {
+			this.isHidden = !this.isHidden;
+		}
+	}
+</script>
+```
+
+```vue
+<template>
+	<button @click="toggle">
+		Hide
+	</button>
+</template>
+```
+
+
+### Styles
+
+Sometimes classes don't give us enough change flexibility
+So then _styles_ come to the rescue
+
+Attribute `:style` can be set like an object with _`CSS-properties`_ 
+```vue
+<div :style="{
+	'font-size': '20px',
+	'color': 'white'
+}">
+	...
+</div>
+```
+
+Ofc we can make this _styles_ reactive by binding to the _data-properties_
+```vue
+<div :style="{
+	'font-size': size + 'px',
+	'color': color
+}">
+	...
+</div>
+```
